@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid view</title>
+    <meta charset="UTF-8" />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="a"></div>
+
+    <script type="text/babel">
+      
+      
+    const First=<div style={{width:"55%",height:"215px",backgroundColor:"coral",color:"white",fontFamily:"sans-serif",fontSize:"12px",position:"absolute"}} ><div style={{position:"absolute",top:"15px"}}>
+      <li style={{display:"inline",padding:"55px",fontSize:"15px"}}>PIXEL GEEK</li>
+      <li style={{display:"inline",padding:"15px"}}>VIDEOS</li>
+      <li style={{display:"inline",padding:"15px"}}>RAMBELS</li>
+      <li style={{display:"inline",padding:"15px"}}>PROJECTS</li>
+      <li style={{display:"inline",padding:"15px"}}>THE OVERFLOW</li></div>
+    </div>;
+     const Head=<h1 style={{color:"orange",fontSize:"55px",}}>Rejection is hard </h1>
+     const content=<p style={{textAlign:"left"}}> We are taught ejection at an early age when we want to do something or get something and our parents say "no"</p>
+
+     const list=({children})=><li style={{textIndent:"15px"}}>{children}</li>;
+
+    const Second=<div style={{width:"85%",height:"555px",backgroundColor:"white",position:"absolute",left:"85px",top:"85px",fontSize:"21px"}}><div style={{width:"65%",height:"255px",position:"absolute",left:"35px"}}>{Head}
+    <p> February 12, 2019</p>{content}{list({children:"we are aiming for a certain grade in school and we don' get it"})}
+
+    {list({children:"you go through the interview process for a job and you don't get the position"})}   
+  
+     {list({children:"when you work so hard to get client and  your proposal gets rejected"})} 
+     {list({children:" you want a boyfriend or girlfriend and she/he says no. i don't like you in that way  "})}
+     <p>At the root of it all,weall want something so bad and when life says no,you can' have it ,we get mad and either take it out on someone else, something else or worse ,ourselve</p>
+     <p>Rejection is part of life and its ok to be rejected</p>  
+
+    
+  </div></div>
+    
+    const Third=<div style={{width:"85%",height:"635px",backgroundColor:"darkgrey",position:"absolute",left:"95px"}}>{First}{Second}</div>
+
+  ReactDOM.render(Third,document.getElementById("a"));
+
+  
+    </script>
+  </body>
+</html>
