@@ -36,7 +36,7 @@
       };
       
        const result = [<CounterApp />];
-      function NumberList(props) {
+      function NextCounter(props) {
         const Additem = props.result;
        
         return <p>{Additem}</p>;
@@ -45,7 +45,7 @@
         result.push(<CounterApp />);
         ReactDOM.render(
           <div>
-            <NumberList result={result} />
+            <NextCounter result={result} />
             <button onClick={addcounter}>Add Counter</button>
           </div>,
           document.getElementById("root")
@@ -54,7 +54,7 @@
      
       ReactDOM.render(
         <div>
-          <NumberList result={result} />
+          <NextCounter result={result} />
           <button onClick={addcounter}>Add Counter</button>
         </div>,
         document.getElementById("root")
